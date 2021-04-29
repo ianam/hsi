@@ -39,3 +39,27 @@
         width: 76vw; /* 650px/850px beings to compress */
     }
 }
+
+/* MAIN */
+
+#main {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-row {
+    display: flex;
+    border: solid 5px palegreen;
+    justify-content: space-between;
+    height: 300px;
+}
+
+.feature-img {
+    width: 600px;
+    background-color: salmon;
+}
+
+.feature-links {
+    border: solid 1px blue;
+    list-style: none;
+}
