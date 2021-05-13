@@ -66,23 +66,42 @@
     }
 }
 
-/* MAIN */
+/***************************/
+/* FOOTER */
+/***************************/
 
 #main {
     display: flex;
     flex-direction: column;
 }
 
+#main-banner {
+    height: 300px;
+    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255,0,0,0)), url("images/vancouver-skyline.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#main-banner h2{
+    padding: 50px 30px;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    color: #640600;
+}
+
 .feature-row {
+    background-color: #DFDFDF;
     display: flex;
     border: solid 5px palegreen;
     justify-content: space-between;
     height: 300px;
+    padding: 20px 0;
 }
 
-.feature-img {
-    width: 600px;
-    background-color: salmon;
+.feature-img img {
+    height: 300px;
 }
 
 .feature-links {
