@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Verdana;
 }
 
 .container {
@@ -13,19 +14,36 @@
 
 /* HEADER */
 
-#logo{
-   margin-right: auto; /* float logo left */
-   background: orchid;
-   height: 100px;
+header {
+    background-color: blue;
 }
 
-#header {
+#logo {
+   display: flex;
+   margin-right: auto; /* float logo left */
+   background: orchid;
+   height: auto;
+   width: 300px;
+   justify-content: center;
+   align-items: center;
+}
+
+#logo img {
+    height: 100px;
+    margin: auto;
+}
+
+#logo h1 {
+    color: cyan;
+}
+
+header nav {
     display: flex;
     align-items: center; /* vertical center nav links */
     justify-content: flex-end;
 }
 
-#header ul {
+header ul {
     background: tomato;
     display: flex;
     list-style: none;
@@ -34,7 +52,7 @@
 }
 
 @media only screen and (max-width: 850px) {
-    #header ul {
+    header ul {
         background: red;
         width: 76vw; /* 650px/850px beings to compress */
     }
