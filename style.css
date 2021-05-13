@@ -92,12 +92,15 @@
 }
 
 .feature-row {
-    background-color: #DFDFDF;
     display: flex;
-    border: solid 5px palegreen;
     justify-content: space-between;
-    height: 300px;
-    padding: 20px 0;
+    padding-top: 50px;
+}
+
+.feature-text {
+    padding: 40px;
+    border: solid 1px red;
+    text-align: center;
 }
 
 .feature-img img {
@@ -105,8 +108,23 @@
 }
 
 .feature-links {
-    border: solid 1px blue;
+    display: flex;
+    flex-direction: column;
     list-style: none;
+    align-items: center;
+}
+
+.feature-link {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    width: 200px;
+    border: solid 1px green;
+}
+
+.feature-link img {
+    width: 50px;
 }
 
 /***************************/
