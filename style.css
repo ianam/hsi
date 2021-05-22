@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Verdana;
+    font-family: 'Open Sans';
 }
 
 .container {
@@ -43,14 +43,14 @@
     width: 500px;
 }
 
-#header li {
+.button {
     border: solid 2px #640600;
     padding: 10px 30px;
     border-radius: 10px;
     margin-right: 10px;
 }
 
-#header li:hover {
+.button:hover {
     background: #cccccc;
 }
 
@@ -62,19 +62,19 @@
 
 #header-banner {
     height: 500px;
-    background-image: linear-gradient(rgb(255, 255, 255), rgba(115, 109, 134, 0.5)), url("images/vancouver-skyline.jpg");
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(115, 109, 134, 0.7)), url("images/vancouver-skyline.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     margin-top: -100px;
 }
 
-#header-banner h2{
+#header-banner h2 {
     width: 1000px;
     text-transform: uppercase;
-    font-weight: 200;
+    font-weight: 400;
     padding: 250px 30px;
-    font-size: 35px;
+    font-size: 40px;
     text-align: center;
     color: white;
     margin: auto;
@@ -104,12 +104,17 @@
 
 .feature-text {
     padding: 40px;
-    border: solid 1px red;
     text-align: center;
+}
+
+.feature-text h3 {
+    font-weight: 300;
+    font-size: 40px;
 }
 
 .feature-text p {
     margin: 20px;
+    line-height: 30px;
 }
 
 .feature-img img {
@@ -118,28 +123,30 @@
 
 .feature-links {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     list-style: none;
     align-items: center;
 }
 
 .feature-link {
+    height: 55px;
     display: flex;
     align-items: center;
-    margin: 5px;
+    margin: 5px 20px;
     padding: 10px;
     width: 200px;
-    background-color: #ffeb99;
+    border: solid 2px #640600;
     border-radius: 10px;
+    color: #640600;
+    font-size: 18px;
 }
 
 .feature-link:hover {
-    box-shadow: 5px 5px 5px #888888;
+    box-shadow: 5px 5px 10px #888888;
 }
 
 .feature-icon {
-    width: 50px;
-    padding-right: 20px;
+    padding: 0 15px;
 }
 
 /***************************/
@@ -148,7 +155,7 @@
 
 #footer {
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 30px 0;
     color: #640600;
 }
 
