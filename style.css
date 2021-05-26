@@ -86,7 +86,7 @@
 }
 
 /***************************/
-/* MAIN */
+/* HOME - MAIN */
 /***************************/
 
 #main {
@@ -149,16 +149,27 @@
 }
 
 /***************************/
+/* SECONDARY - MAIN */
+/***************************/
+
+hr {
+   width: 400px;
+   margin: 20px auto;
+   border: 1px solid #800000;
+}
+
+/***************************/
 /* BANNER */
 /***************************/
 
 .banner {
-    background-image: url("images/medical-bldg.jpeg");
+    background-image: linear-gradient(rgb(255, 255, 255, 0), rgb(218, 165, 32, 0.5)), url("images/medical-bldg.jpeg");
     height: 400px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
+    margin-bottom: 30px;
 }
 
 .banner h1 {
@@ -195,11 +206,9 @@
 }
 
 .services-col {
-    border: solid 1px red;
     padding: 10px;
     width: 400px;
 }
-
 
 /***************************/
 /* FOOTER */
