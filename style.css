@@ -215,7 +215,7 @@ hr {
     padding: 20px;
 }
 
-.col-lt{
+.col-lt {
     display: flex;
     align-items: center;
     justify-content: flex-end;
