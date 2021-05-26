@@ -86,7 +86,7 @@
 }
 
 /***************************/
-/* HOME - MAIN */
+/* MAIN */
 /***************************/
 
 #main {
@@ -148,9 +148,14 @@
     max-height: 40px;
 }
 
-/***************************/
-/* SECONDARY - MAIN */
-/***************************/
+.phone-banner {
+    background-color: #800000;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 30px;
+}
 
 hr {
    width: 400px;
@@ -185,6 +190,7 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    padding: 20px 0;
 }
 
 .services-title h2 {
@@ -206,8 +212,36 @@ hr {
 }
 
 .services-col {
-    padding: 10px;
-    width: 400px;
+    padding: 20px;
+}
+
+.col-lt{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #1e212b;
+    font-size: 25px;
+    font-weight: 200;
+    width: 200px;
+}
+
+.col-rt {
+    width: 600px;
+    border-left: 1px solid #800000;
+}
+
+.service-links {
+    display: flex;
+    justify-content: center;
+}
+
+.button-secondary {
+    background-color: #daa520;
+    padding: 20px 40px;
+    border-radius: 10px;
+    margin: 50px 20px;;
+    color: white;
+    font-size: 20px;
 }
 
 /***************************/
