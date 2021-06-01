@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Open Sans';
+    text-decoration: none;
 }
 
 .container {
@@ -54,7 +55,6 @@ nav {
 }
 
 #nav-links a {
-    text-decoration: none;
     color: #640600;
     text-transform: uppercase;
 }
@@ -64,22 +64,40 @@ nav {
 }
 
 #header-banner {
-    height: 500px;
+    height: 450px;
     background-image: linear-gradient(rgb(255, 255, 255), rgba(115, 109, 134, 0.7)), url("images/vancouver-skyline.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-#header-banner h2 {
+#header-banner .banner-text {
     width: 1000px;
     text-transform: uppercase;
     font-weight: 400;
-    padding: 250px 30px;
-    font-size: 40px;
+    padding: 30px 30px;
+    font-size: 36px;
     text-align: center;
     color: white;
-    margin: auto;
+}
+
+#header-banner .link {
+    font-size: 24px;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 200px;
+    margin-bottom: 50px;
+}
+
+#header-banner .link:hover {
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 @media only screen and (max-width: 850px) {
@@ -131,7 +149,7 @@ nav {
 }
 
 .hp-link {
-    height: 55px;
+    height: 50px;
     display: flex;
     align-items: center;
     margin: 5px 20px;
@@ -144,12 +162,17 @@ nav {
 }
 
 .hp-link:hover {
-    box-shadow: 5px 5px 10px #888888;
+    color: white;
+    background-color: #640600;
+}
+
+.hp-link:hover .hp-icon {
+    filter: brightness(0) invert(1); /* white icons */
 }
 
 .hp-icon {
     padding: 0 15px;
-    max-height: 40px;
+    max-height: 35px;
 }
 
 /***************************/
@@ -250,17 +273,18 @@ nav {
     font-size: 20px;
 }
 
-.secondary-link a {
-    text-decoration: none;
-}
-
 /***************************/
 /* FOOTER */
 /***************************/
 
 #footer {
+    background-color: rgb(223, 223, 223);
+    margin-top: 50px;
+}
+
+#footer-cont {
     justify-content: space-between;
-    padding: 30px 0;
+    padding: 30px 0 60px 0;
     color: #640600;
 }
 
