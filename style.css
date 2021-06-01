@@ -44,18 +44,18 @@ nav {
 }
 
 .nav-link {
-    border: solid 2px #640600;
+    border: solid 2px #800000;
     padding: 10px 30px;
     border-radius: 10px;
     margin-right: 10px;
 }
 
 .nav-link:hover {
-    background: #640600;
+    background: #800000;
 }
 
 #nav-links a {
-    color: #640600;
+    color: #800000;
     text-transform: uppercase;
 }
 
@@ -155,15 +155,15 @@ nav {
     margin: 5px 20px;
     padding: 10px;
     width: 200px;
-    border: solid 2px #640600;
+    border: solid 2px #800000;
     border-radius: 10px;
-    color: #640600;
+    color: #800000;
     font-size: 18px;
 }
 
 .hp-link:hover {
     color: white;
-    background-color: #640600;
+    background-color: #800000;
 }
 
 .hp-link:hover .hp-icon {
@@ -179,8 +179,15 @@ nav {
 /* MAIN - SECONDARY */
 /***************************/
 
+#services-banner {
+    background-image: linear-gradient(rgb(255, 255, 255, 0), rgba(30, 33, 43, 0.6)), url("images/medical-bldg.jpeg");
+}
+
+#employment-banner {
+    background-image: linear-gradient(rgb(255, 255, 255, 0), rgba(30, 33, 43, 0.6)), url("images/employment.jpg");
+}
+
 .banner {
-    background-image: linear-gradient(rgb(255, 255, 255, 0), rgb(218, 165, 32, 0.5)), url("images/medical-bldg.jpeg");
     height: 400px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -207,6 +214,10 @@ nav {
     border-radius: 30px;
 }
 
+.call-block p:last-child {
+    font-size: 40px;
+}
+
 .divider {
    width: 400px;
    margin: 20px auto;
@@ -218,7 +229,6 @@ nav {
     justify-content: space-between;
     align-items: flex-end;
     padding: 20px 0;
-    border: solid 1px orangered;
 }
 
 .header-block h2 {
@@ -237,7 +247,6 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: solid 1px darkcyan;
 }
 
 .content-col {
