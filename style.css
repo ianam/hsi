@@ -11,7 +11,7 @@
 }
 
 /***************************/
-/* HEADER */
+/* HEADER - HOME */
 /***************************/
 
 #header {
@@ -30,33 +30,37 @@
     height: 80px;
 }
 
-#header nav {
+nav {
     display: flex;
     align-items: center; /* vertical center nav links */
     justify-content: flex-end;
 }
 
-#header ul {
+#nav-links {
     display: flex;
     list-style: none;
     justify-content: space-between;
 }
 
-.button {
+.nav-link {
     border: solid 2px #640600;
     padding: 10px 30px;
     border-radius: 10px;
     margin-right: 10px;
 }
 
-.button:hover {
-    background: #cccccc;
+.nav-link:hover {
+    background: #640600;
 }
 
-#header li a {
+#nav-links a {
     text-decoration: none;
     color: #640600;
     text-transform: uppercase;
+}
+
+#nav-links a:hover {
+    color: white;
 }
 
 #header-banner {
@@ -81,12 +85,12 @@
 @media only screen and (max-width: 850px) {
     #header ul {
         background: red;
-        width: 76vw; /* 650px/850px beings to compress */
+        width: 76vw; /* 650px/850px begins to compress */
     }
 }
 
 /***************************/
-/* MAIN */
+/* MAIN - HOME */
 /***************************/
 
 #main {
@@ -94,39 +98,39 @@
     flex-direction: column;
 }
 
-.feature-row {
+.hp-row {
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
 }
 
-.feature-text {
+.hp-text {
     padding: 40px;
     text-align: center;
 }
 
-.feature-text h3 {
+.hp-text h3 {
     font-weight: 300;
     font-size: 40px;
 }
 
-.feature-text p {
+.hp-text p {
     margin: 20px;
     line-height: 30px;
 }
 
-.feature-img img {
+.hp-img img {
     height: 300px;
 }
 
-.feature-links {
+.hp-links {
     display: flex;
     justify-content: center;
     list-style: none;
     align-items: center;
 }
 
-.feature-link {
+.hp-link {
     height: 55px;
     display: flex;
     align-items: center;
@@ -139,32 +143,17 @@
     font-size: 18px;
 }
 
-.feature-link:hover {
+.hp-link:hover {
     box-shadow: 5px 5px 10px #888888;
 }
 
-.feature-icon {
+.hp-icon {
     padding: 0 15px;
     max-height: 40px;
 }
 
-.phone-banner {
-    background-color: #800000;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    padding: 20px;
-    border-radius: 30px;
-}
-
-hr {
-   width: 400px;
-   margin: 20px auto;
-   border: 1px solid #800000;
-}
-
 /***************************/
-/* BANNER */
+/* MAIN - SECONDARY */
 /***************************/
 
 .banner {
@@ -186,32 +175,49 @@ hr {
     left: 10px;
 }
 
-.services-title {
+.call-block {
+    background-color: #800000;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.divider {
+   width: 400px;
+   margin: 20px auto;
+   border: 1px solid #800000;
+}
+
+.header-block {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     padding: 20px 0;
+    border: solid 1px orangered;
 }
 
-.services-title h2 {
+.header-block h2 {
     font-weight: 300;
     font-size: 40px;
 }
 
-.services-title h3 {
+.header-block h3 {
     font-style: italic;
     color: grey;
     font-size: 25px;
     font-weight: 300;;
 }
 
-.services-row {
+.content-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    border: solid 1px darkcyan;
 }
 
-.services-col {
+.content-col {
     padding: 20px;
 }
 
@@ -230,18 +236,22 @@ hr {
     border-left: 1px solid #800000;
 }
 
-.service-links {
+.secondary-links {
     display: flex;
     justify-content: center;
 }
 
-.button-secondary {
+.secondary-link {
     background-color: #daa520;
     padding: 20px 40px;
     border-radius: 10px;
     margin: 50px 20px;;
     color: white;
     font-size: 20px;
+}
+
+.secondary-link a {
+    text-decoration: none;
 }
 
 /***************************/
