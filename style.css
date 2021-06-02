@@ -86,7 +86,7 @@ nav {
 }
 
 #header-banner .link {
-    font-size: 24px;
+    font-size: 20px;
     color: white;
     border: 1px solid white;
     padding: 10px 30px;
@@ -111,7 +111,7 @@ nav {
 /* MAIN - HOME */
 /***************************/
 
-#main {
+.main {
     display: flex;
     flex-direction: column;
 }
@@ -179,6 +179,8 @@ nav {
 /* MAIN - SECONDARY */
 /***************************/
 
+/* BANNER */
+
 #services-banner {
     background-image: linear-gradient(rgb(255, 255, 255, 0), rgba(30, 33, 43, 0.6)), url("images/medical-bldg.jpeg");
 }
@@ -193,7 +195,6 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    margin-bottom: 30px;
 }
 
 .banner h1 {
@@ -203,6 +204,49 @@ nav {
     position: absolute;
     bottom: 10px;
     left: 10px;
+}
+
+/* MAIN */
+
+.main-content {
+    display: flex;
+}
+
+.primary-content {
+    width: 750px;
+    margin-top: 30px;
+}
+
+.sidebar-content {
+    background-color: #eee;
+    padding: 10px;
+    width: 250px;
+    margin-left: 20px;
+}
+
+.sidebar-links {
+    list-style: none;
+}
+
+.sidebar-links li {
+    font-size: 18px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.sidebar-links a {
+    color: #1e212b;
+}
+
+.sidebar-links p {
+    font-size: 14px;
+    padding-left: 15px;
+    color: rgb(71, 71, 71);
+    margin-bottom: 20px;
+}
+
+.sidebar-links .active {
+    border-left: solid 3px #deb887;
 }
 
 .call-block {
@@ -216,6 +260,13 @@ nav {
 
 .call-block p:last-child {
     font-size: 40px;
+}
+
+.trial-block {
+    background-color: #ffebcd;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
 }
 
 .divider {
@@ -258,13 +309,14 @@ nav {
     align-items: center;
     justify-content: flex-end;
     color: #1e212b;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 200;
-    width: 200px;
+    width: 150px;
+    text-align: right;
 }
 
 .col-rt {
-    width: 600px;
+    width: 450px;
     border-left: 1px solid #800000;
 }
 
