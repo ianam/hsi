@@ -182,11 +182,11 @@ nav {
 /* BANNER */
 
 #services-banner {
-    background-image: linear-gradient(rgb(255, 255, 255, 0), rgba(30, 33, 43, 0.6)), url("images/medical-bldg.jpeg");
+    background-image: linear-gradient(rgb(255, 255, 255, 0), rgba(30, 33, 43, 0.7)), url("images/medical-bldg.jpeg");
 }
 
 #employment-banner {
-    background-image: linear-gradient(rgb(255, 255, 255, 0), rgba(30, 33, 43, 0.6)), url("images/employment.jpg");
+    background-image: linear-gradient(rgb(255, 255, 255, 0), rgba(30, 33, 43, 0.7)), url("images/employment.jpg");
 }
 
 .banner {
@@ -200,7 +200,7 @@ nav {
 .banner h1 {
     color: white;
     text-transform: uppercase;
-    font-size: 120px;
+    font-size: 100px;
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -269,6 +269,10 @@ nav {
     padding: 20px;
 }
 
+#services-map {
+    width: 750px;
+}
+
 .divider {
    width: 400px;
    margin: 20px auto;
@@ -318,20 +322,6 @@ nav {
 .col-rt {
     width: 450px;
     border-left: 1px solid #800000;
-}
-
-.secondary-links {
-    display: flex;
-    justify-content: center;
-}
-
-.secondary-link {
-    background-color: #daa520;
-    padding: 20px 40px;
-    border-radius: 10px;
-    margin: 50px 20px;;
-    color: white;
-    font-size: 20px;
 }
 
 /***************************/
