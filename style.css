@@ -262,6 +262,10 @@ nav {
     font-size: 40px;
 }
 
+.content {
+    padding-right: 20px;
+}
+
 .trial-block {
     background-color: #ffebcd;
     font-size: 18px;
