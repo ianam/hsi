@@ -401,7 +401,7 @@ nav {
     display: inline-block;
 }
 
-.form-section input, select {
+.form-section input, select, textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f8f8f8;
@@ -427,13 +427,13 @@ nav {
     width: 45%;
 }
 
-.form-row-fst input {
+.form-row-fst input, textarea {
     width: 100%;
 }
 
 .form-row-scd {
     float: left;
-    width: 45%;
+    width: 48%;
 }
 
 .form-row select {
