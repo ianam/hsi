@@ -33,16 +33,77 @@
         </div>
     <div class="main-content">
         <div class="primary-content">
-            <p>Health Staffing International has a variety of positions available for the healthcare professional. Click on a job posting below to view details about the opening.</p>
-            <h2>Job Board Listings</h2>
-            <h2>General Application</h2>
-        </div>
+            <p>We have positions open for healthcare professionals in a variety of fields. Our jobs board lists currently open vacancies, but we accept general applications at any time. General applicants are held on file and contacted when a suitable position becomes available.</p>
+            <h3>Important information for international applicants</h3>
+            <div class="header-block">
+                <h2>Current Openings</h2>
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        Job 1
+                    </td>
+                    <td>
+                        Job 2
+                    </td>
+                </tr>
+            </table>
+            <div class="header-block">
+                <h2>General Application</h2>
+            </div>
+            <h3>Requirements</h3>
+            <p>Please ensure that you have the necessary documentation and registration for employment. Active registration under the BC College of Nursing Professionals is required for for RN, RPN, and LPN positions. Active registration under the BC Care Aide/Community Health Care Registry is required for Care Aide positions.</p>
+            <p>Please fill out the application form below, and attach your current resume, in order to submit an application. Suitable applicants will be contacted within 2 weeks of applying. Please not that due to the volume of applications we receive, we are unable to respond to each one individually.</p>
+            <form>
+                <h4>Personal Information</h4>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname">
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname">
+                <label for="email1">Email:</label>
+                <input type="email" id="email1" name="email1">
+                <label for="email2">Confirm Email:</label>
+                <input type="email2" id="email2" name="email2">
+                <label for="tel">Phone Number:</label>
+                <input type="tel" id="tel" name="tel">
+                <h4>Professional Information</h4>
+                <label for="field">What is your primary field of experience?</label>
+                <select name="field" id="field">
+                    <option value="Nurse">Nurse</option>
+                </select>
+                <label for="yrs-exp">Years of experience:</label>
+                <input type="number" id="yrs-exp" name="yrs-exp">
+                <label for="desig">Professional designation:</label>
+                <input type="desig" id="desig" name="desig" placeholder="RN, RPN, LPN, Care Aide">
+                <p>Are you legally eligible to work in Canada?</p>
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" name="elig" value="yes">
+                <label for="yes">No</label>
+                <input type="radio" id="no" name="elig" value="no">
+                <p>What type of employment are you looking for?</p>
+                <input type="checkbox" id="casual" name="casual" value="Casual">
+                <label for="casual"> Casual (on-call, as needed)</label><br>
+                <input type="checkbox" id="pt" name="pt" value="Part-time">
+                <label for="pt"> Part-time (30 hours or less)</label><br>
+                <input type="checkbox" id="ft" name="ft" value="Full-time">
+                <label for="ft"> Full-time (30 hours or more)</label><br>
+                <input type="checkbox" id="temp" name="temp" value="Temporary">
+                <label for="temp"> Temporary</label>
+                <label for="avail">How soon are you available to start work?</label>
+                <input type="text" id="avail" name="avail">
+                <label for="resume">Attach your resume:</label>
+                <input type="file" id="resume" name="resume">
+                <p>I consent to being contacted for further information regarding the registration process.</p>
+                <input type="checkbox" id="agree" name="agree" value="I Agree">
+                <label for="agree"> I Agree</label>
+                <p>Captcha</p>
+                <input type="submit" value="Submit">
+            </form>
+        </div>        
         <div class="sidebar-content">
             <ul class="sidebar-links">
                 <li><a href="employment.html">Employment</a></li>
                 <p>We offer a host of employment benefits for our employees</p>
-                <li><a href="requirements.html">Requirements</a></li>
-                <p>Documents and registrations required for applicants</p>
                 <li class="active"><a href="#">Apply Now</a></li>
                 <p>View and apply to current open positions</p>
                 <li><a href="resources.html">Staff Resources</a></li>
