@@ -342,6 +342,14 @@ nav {
     margin-top: 10px;
 }
 
+#employ-types {
+    font-size: 14px;
+}
+
+#employ-types td {
+    padding: 5px;
+}
+
 #jobs-board {
     width: 100%;
 }
