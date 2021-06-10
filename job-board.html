@@ -54,50 +54,114 @@
             <h3>Requirements</h3>
             <p>Please ensure that you have the necessary documentation and registration for employment. Active registration under the BC College of Nursing Professionals is required for for RN, RPN, and LPN positions. Active registration under the BC Care Aide/Community Health Care Registry is required for Care Aide positions.</p>
             <p>Please fill out the application form below, and attach your current resume, in order to submit an application. Suitable applicants will be contacted within 2 weeks of applying. Please not that due to the volume of applications we receive, we are unable to respond to each one individually.</p>
-            <form>
-                <h4>Personal Information</h4>
-                <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname">
-                <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="lname">
-                <label for="email1">Email:</label>
-                <input type="email" id="email1" name="email1">
-                <label for="email2">Confirm Email:</label>
-                <input type="email2" id="email2" name="email2">
-                <label for="tel">Phone Number:</label>
-                <input type="tel" id="tel" name="tel">
-                <h4>Professional Information</h4>
-                <label for="field">What is your primary field of experience?</label>
-                <select name="field" id="field">
-                    <option value="Nurse">Nurse</option>
-                </select>
-                <label for="yrs-exp">Years of experience:</label>
-                <input type="number" id="yrs-exp" name="yrs-exp">
-                <label for="desig">Professional designation:</label>
-                <input type="desig" id="desig" name="desig" placeholder="RN, RPN, LPN, Care Aide">
-                <p>Are you legally eligible to work in Canada?</p>
-                <label for="yes">Yes</label>
-                <input type="radio" id="yes" name="elig" value="yes">
-                <label for="yes">No</label>
-                <input type="radio" id="no" name="elig" value="no">
-                <p>What type of employment are you looking for?</p>
-                <input type="checkbox" id="casual" name="casual" value="Casual">
-                <label for="casual"> Casual (on-call, as needed)</label><br>
-                <input type="checkbox" id="pt" name="pt" value="Part-time">
-                <label for="pt"> Part-time (30 hours or less)</label><br>
-                <input type="checkbox" id="ft" name="ft" value="Full-time">
-                <label for="ft"> Full-time (30 hours or more)</label><br>
-                <input type="checkbox" id="temp" name="temp" value="Temporary">
-                <label for="temp"> Temporary</label>
-                <label for="avail">How soon are you available to start work?</label>
-                <input type="text" id="avail" name="avail">
-                <label for="resume">Attach your resume:</label>
-                <input type="file" id="resume" name="resume">
-                <p>I consent to being contacted for further information regarding the registration process.</p>
-                <input type="checkbox" id="agree" name="agree" value="I Agree">
-                <label for="agree"> I Agree</label>
-                <p>Captcha</p>
-                <input type="submit" value="Submit">
+            <form id="application-form">
+                <div class="application-header">
+                    <h4>Personal Information</h4>
+                </div>
+                <section class="form-section">
+                    <div class="form-row">
+                       <div class="form-row-fst">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="fname">
+                        </div>
+                        <div class="form-row-scd">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lname">
+                        </div>
+                        <br /> 
+                    </div>
+                    <div class="form-row">
+                        <div class="form-row-fst">
+                            <label for="tel">Phone Number</label>
+                            <input type="tel" id="tel" name="tel"><br>
+                         </div>
+                         <div class="form-row-scd">
+                            <label for="email1">Email</label>
+                            <input type="email" id="email1" name="email1">
+                         </div>
+                         <br /> 
+                     </div>
+                </section>
+                <div class="application-header">
+                    <h4>Professional Information</h4>
+                </div>
+                <div class="form-section">
+                    <div class="form-row">
+                        <div class="form-row-fst">
+                            <label for="field">What is your primary field of experience?</label>
+                        </div>
+                        <div class="form-row-scd">
+                            <select name="field" id="field">
+                                <option value="Administration">Administration</option>
+                                <option value="Ambulatory Care">Ambulatory Care</option>
+                                <option value="CH2">CH2</option>
+                                <option value="CH3">CH3</option>
+                                <option value="Community Health">Community Health</option>
+                                <option value="CVICU">CVICU</option>
+                                <option value="Emergency">Emergency</option>
+                                <option value="Hemodialysis">Hemodialysis</option>
+                                <option value="Home Care">Home Care</option>
+                                <option value="TBD">TBD</option>
+                            </select>
+                        </div>
+                        <br />
+                    </div>
+                    <div class="form-row">
+                        <div class="form-row-fst">
+                            <label for="yrs-exp">Years of experience</label>
+                            <input type="text" id="yrs-exp" name="yrs-exp">
+                         </div>
+                         <div class="form-row-scd">
+                            <label for="desig">Professional designation</label>
+                            <input type="text" id="desig" name="desig" placeholder="RN, RPN, LPN, Care Aide">
+                         </div>
+                         <br /> 
+                     </div>
+                    <div class="form-row">
+                        <div class="form-row-fst">
+                            <label>Are you legally eligible to work in Canada?</label>
+                            <br />
+                            <div class="form-selects">
+                                <input type="radio" id="yes" name="elig" value="yes">
+                                <label for="yes">Yes</label>
+                                <input type="radio" id="no" name="elig" value="no">
+                                <label for="yes">No</label>
+                            </div>
+                        </div>
+                        <div class="form-row-scd">
+                            <label for="avail">How soon are you available to start work?</label><br />
+                            <input type="text" id="avail" name="avail">
+                        </div>
+                        <br />
+                    </div>
+                    <div class="form-row">
+                        <label>What type of employment are you looking for?</label>
+                        <br />
+                        <div class="form-selects">
+                            <input type="checkbox" id="casual" name="casual" value="Casual">
+                            <label for="casual"> Casual (on-call, as needed)</label><br>
+                            <input type="checkbox" id="pt" name="pt" value="Part-time">
+                            <label for="pt"> Part-time (30 hours or less)</label><br>
+                            <input type="checkbox" id="ft" name="ft" value="Full-time">
+                            <label for="ft"> Full-time (30 hours or more)</label><br>
+                            <input type="checkbox" id="temp" name="temp" value="Temporary">
+                            <label for="temp"> Temporary</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="resume">Attach your resume</label><br />
+                        <input type="file" id="resume" name="resume">
+                    </div>
+                    <br />
+                    <div class="form-row">
+                        <p>I consent to being contacted for further information in the course of the application process.</p>
+                        <input type="checkbox" id="agree" name="agree" value="I Agree">
+                        <label for="agree"> I Agree</label>
+                        <br />
+                    </div>
+                    <input type="submit" value="Submit">
+                </div>
+                
             </form>
         </div>        
         <div class="sidebar-content">

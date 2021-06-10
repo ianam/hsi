@@ -329,6 +329,107 @@ table {
 }
 
 /***************************/
+/* FORMS */
+/***************************/
+
+#application-form {
+    padding: 20px 0;
+}
+
+#application-form h4 {
+    font-weight: 500;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.application-header {
+    background-color: #ffebcd;
+    border-radius: 10px;
+}
+
+.form-section {
+    padding: 10px;
+}
+
+.form-section input, label {
+    padding: 8px;
+    display: inline-block;
+}
+
+.form-section input, select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+}
+
+.form-section label {
+    font-size: 14px;
+    display: inline-block;
+}
+
+.form-row {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-row br {
+    clear: both;
+}
+
+.form-row-fst {
+    float: left;
+    padding-right: 5%;
+    width: 45%;
+}
+
+.form-row-fst input {
+    width: 100%;
+}
+
+.form-row-scd {
+    float: left;
+    width: 45%;
+}
+
+.form-row select {
+    padding: 8px;
+    width: 100%;
+}
+
+.form-row-scd input {
+    width: 100%;
+}
+
+.form-row input[type=file] {
+    width: auto;
+    border: none;
+    background-color: #fff;
+}
+
+.form-row .form-selects {
+    padding-left: 10px;
+}
+
+.form-row .form-selects input {
+    width: auto;
+}
+
+input[type=submit] {
+    background-color: #800000;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type=submit]:hover {
+    background-color: #700000;
+}
+
+
+/***************************/
 /* FOOTER */
 /***************************/
 
