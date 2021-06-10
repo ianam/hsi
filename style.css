@@ -298,6 +298,12 @@ nav {
     font-weight: 300;;
 }
 
+.header-block #listings {
+    color: crimson;
+    font-style: normal;
+    font-weight: 600;
+}
+
 .content-row {
     display: flex;
     flex-wrap: wrap;
@@ -324,8 +330,35 @@ nav {
     border-left: 1px solid #800000;
 }
 
-table {
+#intl-info {
+    background-color: #daa520;
+    padding: 8px;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#jobs-board {
+    width: 100%;
+}
+
+#jobs-board td {
+    background-color: ivory;
+    color: darkslategray;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    vertical-align: top;
     font-size: 14px;
+}
+
+#jobs-board .job-link {
+    margin-top: 10px;
+    display: inline-block;
+    background-color: darkslategray;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
 }
 
 /***************************/
