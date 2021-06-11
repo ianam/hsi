@@ -63,7 +63,7 @@
             </div>
             <p><b>Requirements:</b> Please ensure that you have the necessary documentation and registration for employment. Active registration under the BC College of Nursing Professionals is required for for RN, RPN, and LPN positions. Active registration under the BC Care Aide/Community Health Care Registry is required for Care Aide positions.</p><br />
             <p>Please fill out the application form below, and attach your current resume, in order to submit an application. Suitable applicants will be contacted within 2 weeks of applying. Please not that due to the volume of applications we receive, we are unable to respond to each one individually.</p>
-            <form method="post" name="application-form" id="application-form" action="email-application.php">
+            <form method="post" name="application-form" id="application-form" action="email-application.php" enctype="multipart/form-data">
                 <div class="application-header">
                     <h4>Personal Information</h4>
                 </div>
@@ -156,10 +156,6 @@
                             <input type="checkbox" id="temp" name="type[]" value="Temporary">
                             <label for="temp"> Temporary</label>
                         </div>
-                    </div>
-                    <div class="form-row">
-                        <label for="resume">Attach your resume</label><br />
-                        <input type="file" id="resume" name="resume">
                     </div>
                     <br />
                     <div class="form-row">
