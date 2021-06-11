@@ -17,10 +17,6 @@ if(!isset($_POST['submit']))
     $desig = $_POST['desig'];
     $elig = $_POST['elig'];
     $avail = $_POST['avail'];
-    $type_cas = $_POST['casual'];
-    $type_pt = $_POST['pt'];
-    $type_ft = $_POST['ft'];
-    $type_temp = $_POST['temp'];
 
     // Validate against email injection attempts
     if(IsInjected($usr_email))
@@ -29,7 +25,13 @@ if(!isset($_POST['submit']))
         exit;
     }
 
-    $email_from = 'apply@healthstaffing.ca';
+    // Retrieve checkbox list
+    $select_types = 'None';
+    if(isset($_POST['type']) && is_array($_POST['type']) && count($_POST['type']) > 0){
+        $select_types = implode(', ', $_POST['type']);
+    }
+
+    $email_from = 'careers@healthstaffing.ca';
     $email_subject = "New application form submission from Healthstaffing.ca";
     $email_body = "Application Form submission from Healthstaffing.ca\n".
                     "First Name: $fname\n".
@@ -40,8 +42,8 @@ if(!isset($_POST['submit']))
                     "Years of experience: $yrs_exp\n".
                     "Designation: $desig\n".
                     "Eligible to work in Canada: $elig\n".
-                    "Availability start date: $avail\n";
-                    "Requested employment type: $casual\n";
+                    "Availability start date: $avail\n".
+                    "Employment type: " . $select_types;
 
     $to = 'iana.markevitch@gmail.com';
     $headers = "From: $email_from \r\n";
