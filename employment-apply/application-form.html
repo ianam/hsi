@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="../assets/bootstrap-5.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/fa-styles.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../index.js"></script>
+    <title>Health Staffing | Apply Now</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="../assets/images/healthstaffing_logo.png" alt="Health Staffing Logo" width="500">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav ms-auto mx-5">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../services-main.html">Our Services</a></li>
+                                <li><a class="dropdown-item" href="../services-staff.html">Staff Types</a></li>
+                                <li><a class="dropdown-item" href="../services-area.html">Service Area</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Employment</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../employment-benefits.html">Benefits</a></li>
+                                <li><a class="dropdown-item" href="../employment-apply.html">Apply Now</a></li>
+                                <li><a class="dropdown-item" href="../employment-resources.html">Staff Resources</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Contact</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../contact-main.html">Contact Us</a></li>
+                                <li><a class="dropdown-item" href="../contact-about.html">About Us</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main role="main" class="container">
+        <div class="spacer"></div>
+        <h2>Critical Care Nurse Application</h2>
+        <p>Please fill out the application form below, and attach your current resume, to submit it for review. Applicants will be contacted within two weeks of applying for further processing. Please note that due to the volume of applications we receive, we are unable to respond to each one individually.</p>
+        <div class="p-5 bg-light">
+            <form class="row g-3" method="post" action="email-application.php" enctype="multipart/form-data">
+                <h3>Personal Information</h3>
+                <div class="col-md-6">
+                    <label for="fname" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="fname" name="fname" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="lname" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lname" name="lname" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="col-md-12">
+                    <label for="address" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="address" name="address" required>
+                </div>
+                <div class="col-md-3">
+                    <label for="city" class="form-label">City</label>
+                    <input type="text" class="form-control" id="city" name="city" required>
+                </div>
+                <div class="col-md-3">
+                    <label for="province" class="form-label">Province/State</label>
+                    <input type="text" class="form-control" id="province" name="province">
+                </div>
+                <div class="col-md-2">
+                    <label for="postcode" class="form-label">Postal/ZIP Code</label>
+                    <input type="text" class="form-control" id="postcode" name="postcode">
+                </div>
+                <div class="col-md-4">
+                    <label for="country" class="form-label">Country</label>
+                    <select class="form-select" id="country" name="country" required>
+                        <option selected>Canada</option>
+                        <option>USA</option>
+                    </select>
+                </div>
+                <div class="spacer"></div>
+                <h3>Professional Information</h3>
+                <div class="col-md-6">
+                    <label for="fieldExp" class="form-label">What is your primary field of experience?</label>
+                    <select class="form-select" id="fieldExp" name="fieldExp" required>
+                        <option>ACLS</option>
+                        <option>Acute Care</option>
+                        <option>Administration</option>
+                        <option>BCLS</option>
+                        <option>Cardiac</option>
+                        <option>Chemo Certified</option>
+                        <option>Community Health</option>
+                        <option>Cook</option>
+                        <option>CPR</option>
+                        <option>CVICU</option>
+                        <option>Emergency</option>
+                        <option>Geriatrics</option>
+                        <option>Hemodialysis</option>
+                        <option>Home Support</option>
+                        <option>Housekeeping</option>
+                        <option>Intesive Care</option>
+                        <option>Labor/Delivery</option>
+                        <option>Laundry Aide</option>
+                        <option>Maternal/Child</option>
+                        <option>Medical/Surgical</option>
+                        <option>NALS</option>
+                        <option>NICU Level I</option>
+                        <option>NICU Level II</option>
+                        <option>Operating Room</option>
+                        <option>PALS</option>
+                        <option>Pediatrics</option>
+                        <option>Psychiatric Care</option>
+                        <option>Recovery Room</option>
+                        <option>Surgical</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="yearsExp" class="form-label">Years of experience:</label>
+                    <input type="text" class="form-control" id="yearsExp" name="yearsExp" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="desig" class="form-label">Professional designation:</label>
+                    <input type="text" class="form-control" id="desig" name="desig" placeholder="RN, RPN, LPN, Care Aide, etc.">
+                </div>
+                <div class="col-md-4">
+                    <label for="avail" class="form-label">How soon are you available to start work?</label>
+                    <input type="text" class="form-control" id="avail" name="avail" required>
+                </div>
+                <div class="col-md-12">
+                    <label for="elig" class="form-label">Are you legally eligible to work in Canada?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="elig" id="eligYes" value="Yes">
+                        <label class="form-check-label" for="eligYes">Yes</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="elig" id="eligNo" value="No">
+                        <label class="form-check-label" for="elig">No</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">What type of work are you looking for?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="ft" name="type[]" value="Full-time">
+                        <label class="form-check-label" for="ft">Full-time (30 hours or more)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="pt" name="type[]" value="Part-time">
+                        <label class="form-check-label" for="pt">Part-time (30 hours or less)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="casual" name="type[]" value="Casual">
+                        <label class="form-check-label" for="casual">Casual (on-call, as needed)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="temp" name="type[]" value="Temporary">
+                        <label class="form-check-label" for="temp">Temporary</label>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <label for="resume" class="form-label">Upload your resume</label>
+                    <input class="form-control" type="file" id="resume" name="resume">
+                    <div id="resumeFormat" class="form-text">Suuported formats: DOC, DOCX, PDF or TXT file</div>
+                </div>
+                <div class="col-md-12">
+                    <label class="form-label">I consent to being contacted for further information in the course of the application process</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="agree" id="agree" required>
+                        <label class="form-check-label" for="agree">I Agree</label>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </main>
+    <div class="footer-spacer"></div>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+            </a>
+            <span class="text-muted">&copy; 2021 Health Staffing</span>
+            </div>
+        
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><i class="fab fa-facebook fa-2x"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><i class="fab fa-linkedin fa-2x"></i></a></li>
+            </ul>
+        </footer>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

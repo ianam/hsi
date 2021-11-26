@@ -2,105 +2,240 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
-    <title>Health Staffing</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="assets/bootstrap-5.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/fa-styles.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="index.js"></script>
+    <title>Health Staffing | Home</title>
 </head>
 <body>
-    <div id="header-container">
-        <header class="container" id="header">
-            <div id="logo">
-                <img src="images/logo-redesign-first.png" alt="HSI logo" />
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/healthstaffing_logo.png" alt="Health Staffing Logo" width="500">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav ms-auto mx-5">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="services-main.html">Our Services</a></li>
+                                <li><a class="dropdown-item" href="services-staff.html">Our Staff</a></li>
+                                <li><a class="dropdown-item" href="services-area.html">Service Area</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Employment</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="employment-benefits.html">Benefits</a></li>
+                                <li><a class="dropdown-item" href="employment-apply.html">Apply Now</a></li>
+                                <li><a class="dropdown-item" href="employment-resources.html">Staff Resources</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Contact</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="contact-main.html">Contact Us</a></li>
+                                <li><a class="dropdown-item" href="contact-about.html">About Us</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
             </div>
-            <nav>
-                <ul id="nav-links">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="services.html" class="nav-link">Services</a></li>
-                    <li><a href="employment.html" class="nav-link">Employment</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div id="header-banner">
-            <h2 class="banner-text">Connecting healthcare professionals with facilities to improve health outcomes in BC</h2>
-            <a href="about.html" class="banner-text link">Learn More</a>
+        </nav>
+    </header>
+    <main role="main" class="container">
+        <div class="carousel slide" data-bs-ride="carousel" id="home-carousel">
+            <div class="carousel-inner">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-item active">
+                    <img src="images/vancouver-cityscape.jpg" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Vancouver's premier health staffing provider</h2>
+                        <p>Supporting healthcare facilities and workers for over 30 years</p>
+                        <a class="btn btn-lg btn-light" href="contact-about.html" role="button">Learn More</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/nurses-home.jpg" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Join our team</h2>
+                        <p>Work on your own terms in the field of your choice. Experience more freedom with Health Staffing. </p>
+                        <a class="btn btn-lg btn-light" href="employment-apply.html" role="button">Apply Today</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#home-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#home-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-    </div>
-    <main class="container main">
-        <section class="hp-row">
-            <div class="hp-text">
-                <h3>Full range of services for facilities</h3>
-                <p>Health Staffing International knows the demands placed on staff and on facility operators. We provide a comprehensive gateway for all your healthcare needs.</p>
+        <div class="row mx-0 fp-feature">
+            <div class="col my-auto text-light p-5">
+                <h2>Comprehensive services for facilities</h2>
+                <p>We know the stresses and demands placed on staff and facility operators, and provide comprehensive coverage for the needs of businesses and individuals.</p>
             </div>
-            <div class="hp-img">
-                <img src="images/facilities-home.jpg" />
+            <div class="col d-none d-lg-block">
+                <img src="images/hospital-stock.jpg" class="img-fluid p-3">
             </div>
-        </section>
-        <ul class="hp-links">
-            <a href="services.html" class="hp-link">
-                <img src="images/icons/services-icon-50px.png" class="hp-icon"/>
-                <li>Our Services</li>
-            </a>
-            <a href="staff.html" class="hp-link">
-                <img src="images/icons/staff-icon-50px.png" class="hp-icon" />
-                <li>Staff Types</li>
-            </a>
-            <a href="area-map.html" class="hp-link">
-                <img src="images/icons/area-icon-50px.png" class="hp-icon" />
-                <li>Service Area</li>
-            </a>
-        </ul>
-        <section class="hp-row">
-            <div class="hp-img">
-                <img src="images/nurses-home.jpg" />
+        </div>
+        <div class="card-group">
+            <div class="card main-card text-center py-5">
+                <a href="services-main.html">
+                    <span class="home-icon">
+                        <i class="fas fa-hand-holding-medical"></i>
+                    </span>
+                    <div class="card-body">
+                        <h4 class="card-title">Our Services</h4>
+                        <p class="card-text">We offer fast and flexible staffing for clinics and hospitals, ready to fill immediate vacancies.</p>
+                    </div>   
+                </a>          
             </div>
-            <div class="hp-text">
-                <h3>Rewarding and flexible careers</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            <div class="card main-card text-center py-5">
+                <a href="services-staff.html">
+                    <span class="home-icon">
+                        <i class="fas fa-user-md"></i>
+                    </span>
+                    <div class="card-body">
+                        <h4 class="card-title">Our Staff</h4>
+                        <p class="card-text">Our diverse staff integrate seamlessly into your facility and adhere to the highest levels of care.</p>
+                    </div>
+                </a>
             </div>
-        </section>
-        <ul class="hp-links">
-            <a href="employment.html" class="hp-link">
-                <img src="images/icons/benefits-icon-50px.png" class="hp-icon"/>
-                <li>Benefits</li>
-            </a>
-            <a href="job-board.html" class="hp-link">
-                <img src="images/icons/jobs-icon-50px.png" class="hp-icon"/>
-                <li>Apply Now</li>
-            </a>
-            <a href="resources.html" class="hp-link">
-                <img src="images/icons/resources-icon-50px.png" class="hp-icon"/>
-                <li>Resources</li>
-            </a>
-        </ul>
+            <div class="card main-card text-center py-5">
+                <a href="services-area.html">
+                    <span class="home-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </span>
+                    <div class="card-body">
+                        <h4 class="card-title">Service Area</h4>
+                        <p class="card-text">Our 30 years of industry experience encompasses private and public institutions across British Columbia.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="testimonial-carousel" class="carousel carousel-dark slide py-3" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#testimonial-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#ctestimonial-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="testimonial-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <svg width="800" height="230" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"></svg> 
+                <div class="carousel-caption d-none d-md-block">
+                  <p class="fst-italic">The administration is very hands on... and exhibit a true commitment to our organization. The staff are clearly well integrated within our care team. Our overall satisfaction with their services is very high and I would not hesitate to recommend them.</p>
+                  <p><strong>Annette Condon, MBA, MA, BCR</strong><br>
+                  Pleasant View Housing Society</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <svg width="800" height="230" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"></svg> 
+                <div class="carousel-caption d-none d-md-block">
+                    <p class="fst-italic">We are pleased with the staff and services Health Staffing is providing to our facilities. Housekeeping and laundry services are provided on a consistently satisfactory level [and] personnel are respectful of residents.</p>
+                    <p><strong>Berton Evrett, CA</strong><br>
+                    Belvedere Seniors Living</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <svg width="800" height="230" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"></svg> 
+                <div class="carousel-caption d-none d-md-block">
+                    <p class="fst-italic">We are very confident in Health Staffing's responsiveness and understanding of our operations... They have excellent communication between our management staff and their management staff. [They] provide a team that is essentially seamless to the resident or to the outside observer, and integrates well with our own staff.</p>
+                    <p><strong>Ingo V Riesen, CFO, COO</strong><br>
+                    Simpson Manor</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <div class="row mx-0 fp-feature">
+            <div class="col d-none d-lg-block">
+                <img src="images/nurses.jpg" class="img-fluid p-3">
+            </div>
+            <div class="col my-auto text-light p-5">
+                <h2>Rewarding and flexible careers</h2>
+                <p>We provide nurses with career opportunities in hospital, geriatric, or community settings. Our company boasts a multi-cultural, diverse staff and will work with you to build a career suited to your needs.</p>
+            </div>
+        </div>
+        <div class="card-group pb-5">
+            <div class="card main-card text-center py-5">
+                <a href="employment-benefits.html">
+                    <span class="home-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </span>
+                    <div class="card-body">
+                        <h4 class="card-title">Benefits</h4>
+                        <p class="card-text">With a focus on flexibility and versatility, our placements work with your schedule, offering competitive compensation with less stress.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card main-card text-center py-5">
+                <a href="employment-apply.html">
+                    <span class="home-icon">
+                        <i class="fas fa-file-signature"></i>
+                    </span>
+                    <div class="card-body">
+                        <h4 class="card-title">Apply Now</h4>
+                        <p class="card-text">We offer positions for healthcare professionals in a variety of fields. Apply to current openings, or submit a general application for review.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card main-card text-center py-5">
+                <a href="employment-resources.html">
+                    <span class="home-icon">
+                        <i class="fas fa-info-circle"></i>
+                    </span>
+                    <div class="card-body">
+                        <h4 class="card-title">Staff Resources</h4>
+                        <p class="card-text">Review our policies, employment options, and access forms for download.</p>
+                    </div>
+                </a>
+            </div>
+        </div> 
     </main>
-    <footer id="footer">
-        <div class="container" id="footer-cont">
-            <div class="col" id="col-1">
-                <h3>Health Staffing International</h3>
-                <p>230-618 Columbia Street</p>
-                <p>New Westminster, BC</p>
-                <p>Canada</p>
-                <p>V3M 1A5</p>
+    <div class="footer-spacer"></div>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+            </a>
+            <span class="text-muted">&copy; 2021 Health Staffing</span>
             </div>
-            <div class="col" id="col-2">
-                <h3>Resources</h3>
-                <p>Timesheets</p>
-                <p>Calendars</p>
-                <p>Brochure</p>
-            </div>
-            <div class="col" id="col-3">
-                <h3>Contact</h3>
-                <p>Tel: 604-555-1234</p>
-                <p>Email: info@healthstaffing.org</p>
-            </div>
-        </div>
         
-    </footer>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><i class="fab fa-facebook fa-2x"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><i class="fab fa-linkedin fa-2x"></i></a></li>
+            </ul>
+        </footer>
+        </div>
+        <script src="assets/bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
 </body>
 </html>

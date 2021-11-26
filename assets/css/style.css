@@ -1,0 +1,186 @@
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+/* NAV STYLES */
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: #488d9c;
+}
+
+.navbar .container-fluid {
+    max-width: 1300px;
+    padding: 20px 0;
+}
+
+.nav-link, .nav-item {
+    padding: 0 10px;
+}
+
+/* CUSTOM COLORS */
+
+.btn-primary {
+    background-color: #78b5c1;
+    border-color: #78b5c1;
+}
+
+.btn-primary:hover {
+    background-color: #488d9c;
+    border-color: #488d9c;
+  }
+  .btn-check:focus + .btn-primary, .btn-primary:focus {
+    background-color: #488d9c;
+    border-color: #488d9c;
+    box-shadow: 0 0 0 0.25rem rgba(46, 119, 136, 0.5);
+  }
+  .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
+    background-color: #488d9c;
+    border-color: #488d9c;
+  }
+  .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem rgba(46, 119, 136, 0.5);
+  }
+  .btn-primary:disabled, .btn-primary.disabled {
+    background-color: #78b5c1;
+    border-color: #78b5c1;
+  }
+
+  a {
+    color: #198754;
+  }
+
+  .accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #78b5c1;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+  }
+
+  .accordion-button:focus {
+    z-index: 3;
+    border-color: #78b5c1;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(122, 196, 212, 0.5);
+  }
+
+/* HOME PAGE */
+
+.main-card a {
+    text-decoration: none;
+    color: #000;
+}
+
+.main-card:hover {
+    background-color: #b1c79b;
+}
+
+.main-card:hover .home-icon {
+    background-color: #b1c79b;
+    color: #fff;
+}
+
+.main-card:hover h4 {
+    color: #fff;
+}
+
+.main-card:hover p {
+    color: #fff;
+}
+
+.home-icon {
+    font-size: 4em;
+    color: #b1c79b;
+}
+
+#testimonial-carousel {
+    background-image: radial-gradient(white, #f0f0f0);
+}
+
+.fp-feature {
+    background-color: #586172;
+}
+
+.fp-feature h2 {
+    margin-bottom: 30px;
+}
+
+/* SUB PAGES */
+
+.hero-bg {
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/* FOOTER */
+
+.footer-spacer {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
+}
+
+/* SERVICES */
+
+.bg-serv-main {
+    background-image: url("../../images/services-main-2.png");
+}
+
+.bg-serv-staff {
+    background-image: url("../../images/services-staff.png");
+}
+
+.bg-serv-area {
+    background-image: url("../../images/services-area.png");
+}
+
+/* EMPLOYMENT */
+
+.bg-empl-ben {
+    background-image: url("../../images/employment-benefits.png");
+}
+
+.bg-apply {
+    background-image: radial-gradient(#D86E63 50%, #FFA59C);
+}
+
+.bg-empl-app {
+    background-image: url("../../images/employment-apply.png");
+}
+
+.bg-empl-res {
+    background-image: url("../../images/employment-resources.png");
+}
+
+/* CONTACT */
+
+.bg-contact-abt {
+    background-image: url("../../images/contact-about.png");
+}
+
+.bg-contact-main {
+    background-image: url("../../images/contact-main.png");
+}
+
+.bg-call {
+    background-color: #78b5c1;
+}
+
+.bg-try {
+    background-image: linear-gradient(to bottom right, #7d9575, #b1c79b);
+}
+
+.feature {
+    opacity: 0;
+}
+
+.spacer {
+    height: 30px;
+}
+
+.list-group-item {
+    width: 50%;
+    text-align: center;
+}

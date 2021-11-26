@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="assets/bootstrap-5.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/fa-styles.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <title>Health Staffing | Contact Us</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/healthstaffing_logo.png" alt="Health Staffing Logo" width="500">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav ms-auto mx-5">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="services-main.html">Our Services</a></li>
+                                <li><a class="dropdown-item" href="services-staff.html">Our Staff</a></li>
+                                <li><a class="dropdown-item" href="services-area.html">Service Area</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Employment</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="employment-benefits.html">Benefits</a></li>
+                                <li><a class="dropdown-item" href="employment-apply.html">Apply Now</a></li>
+                                <li><a class="dropdown-item" href="employment-resources.html">Staff Resources</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Contact</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="contact-main.html">Contact Us</a></li>
+                                <li><a class="dropdown-item" href="contact-about.html">About Us</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main role="main" class="container">
+        <div class="spacer"></div>
+        <div class="hero-bg bg-contact-main p-5 mb-4 bg-light rounded-3">
+            <div class="container-fluid py-5">
+                <h1 class="display-6 fw-bold">Contact Us</h1>
+                <p class="col-md-6 fs-5">
+                    Find our staff and direct contact info below, or fill out our contact form and we will get back to you as soon as we can.
+                </p>
+            </div>
+        </div>
+        <div class="row g-5">
+            <div class="col-md-4 ps-5">
+                <h2>Contact Info</h2>
+                <p>#205 - 810 Quayside Drive<br>
+                New Westminster, BC<br>
+                V3M 6B9</p>
+                <p><strong>Tel:</strong> 604 520 7775</p>
+                <p><strong>Email:</strong> info@healthstaffing.org</p>
+            </div>
+            <div class="col-md-4">
+                <h2>Administration</h2>
+                <ul class="list-unstyled">
+                    <li>Greg Boorman, CEO</li>
+                    <li>Meleana Sagastizado, Executive Assistant</li>
+                    <li>Carlos Hampe, Accounts & Administration</li>
+                    <li>Meryl Locke, RN, Director of Care</li>
+                </ul>
+            </div>
+        </div>
+        <div id="contact-form" class="p-5 mb-5 bg-light">
+            <form class="row g-3" name="contact" method="post" action="email-contact.php">
+                <h3>Contact Form</h3>
+                <div class="col-md-6">
+                    <label for="fname" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="fname" name="fname" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="lname" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lname" name="lname">
+                </div>
+                <div class="col-md-6">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" name="phone">
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="col-md-12">
+                    <label for="message" class="form-label">Your Message:</label>
+                    <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+                </div>
+                <button type="submit" name="submit" class="btn btn-primary mb-4" id="contact-submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <div class="bg-light py-5">
+        <div class="container text-center">
+            <h2>Learn more</h2>
+            <div class="card-group w-75 mx-auto">
+                <div class="card m-2">
+                    <div class="card-body">
+                    <h5 class="card-title">Our Staff</h5>
+                    <p class="card-text">Qualified and licensed professionals in a multitude of fields</p>
+                    <a href="services-staff.html" class="btn btn-primary">More Info</a>
+                    </div>
+                </div>
+                <div class="card m-2">
+                    <div class="card-body">
+                    <h5 class="card-title">Service Area</h5>
+                    <p class="card-text">Services for private and public institutions and centers in major BC health regions</p>
+                    <a href="services-area.html" class="btn btn-primary">Area Map</a>
+                    </div>
+                </div>
+                <div class="card m-2">
+                    <div class="card-body">
+                    <h5 class="card-title">About Us</h5>
+                    <p class="card-text">Learn more about our company, values and philosophy</p>
+                    <a href="contact-about.html" class="btn btn-primary">About Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-spacer"></div>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+            </a>
+            <span class="text-muted">&copy; 2021 Health Staffing</span>
+            </div>
+        
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><i class="fab fa-facebook fa-2x"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><i class="fab fa-linkedin fa-2x"></i></a></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="assets/bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
