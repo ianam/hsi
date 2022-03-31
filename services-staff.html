@@ -11,50 +11,83 @@
     <link href="assets/bootstrap-5.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/fa-styles.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
     <title>Health Staffing | Our Staff</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/images/healthstaffing_logo.png" alt="Health Staffing Logo" width="500">
+    <header class="sticky-top bg-white">
+        <div class="nav-top">
+            <ul class="nav container justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-white" href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="ms-3"><a class="text-white" href="#"><i class="fab fa-facebook"></i></a></li>
+                <li class="ms-3"><a class="text-white" href="#"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+        </div>
+        <nav class="navbar nav-first navbar-expand-lg navbar-light container">
+            <div class="container-fluid top-container">
+                <a class="navbar-brand logo" href="index.html">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="navbar-nav ms-auto mx-5">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Services</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="services-main.html">Our Services</a></li>
-                                <li><a class="dropdown-item" href="services-staff.html">Our Staff</a></li>
-                                <li><a class="dropdown-item" href="services-area.html">Service Area</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Employment</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="employment-benefits.html">Benefits</a></li>
-                                <li><a class="dropdown-item" href="employment-apply.html">Apply Now</a></li>
-                                <li><a class="dropdown-item" href="employment-resources.html">Staff Resources</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Contact</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="contact-main.html">Contact Us</a></li>
-                                <li><a class="dropdown-item" href="contact-about.html">About Us</a></li>
-                            </ul>
-                        </li>
-                    </div>
-                </div>
+                <!-- Begin Mailchimp Signup Form -->
+                <form action="https://healthstaffing.us14.list-manage.com/subscribe/post?u=9f9ca06b938ff266c5372e49f&amp;id=cd52c343e8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                    <div class="mc-field-group">
+                        <label for="mce-EMAIL" class="my-1 mr-2 mail-label">Join our mailing list
+                        </label>
+                        <div class="input-group">
+                          <input type="email" value="" name="EMAIL" class="required email form-control mr-sm-2" id="mce-EMAIL" placeholder="Enter your email">  
+                            <div id="mce-responses" class="clear foot">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9f9ca06b938ff266c5372e49f_cd52c343e8" tabindex="-1" value=""></div>
+                                <div class="optionalParent">
+                                    <div class="clear foot">
+                                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-outline-success my-2 my-sm-0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </form>
+                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                <!--End mc_embed_signup-->
             </div>
         </nav>
+        <div class="nav-sec">
+            <nav class="navbar navbar-expand-lg navbar-light container">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="navbar-nav">
+                            <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active text-white dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Services</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="services-main.html">Our Services</a></li>
+                                    <li><a class="dropdown-item" href="services-staff.html">Our Staff</a></li>
+                                    <li><a class="dropdown-item" href="services-area.html">Service Area</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Employment</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="employment-benefits.html">Benefits</a></li>
+                                    <li><a class="dropdown-item" href="employment-travel-nursing.html">Travel Nursing</a></li>
+                                    <li><a class="dropdown-item" href="employment-apply.html">Apply Now</a></li>
+                                    <li><a class="dropdown-item" href="employment-resources.html">Staff Resources</a></li>
+                                </ul>
+                            </li>
+                            <a class="nav-link text-white " aria-current="page" href="contact-main.html">Contact</a>
+                            <a class="nav-link text-white" aria-current="page" href="contact-about.html">About</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
     <main role="main" class="container">
         <div class="spacer"></div>
@@ -62,32 +95,32 @@
             <div class="container-fluid py-5">
                 <h1 class="display-6 fw-bold">Our Staff</h1>
                 <p class="col-md-6 fs-5">
-                    Each of our employees are screened to ensure that they meet the standards and licensing criteria for employment, as well as their compatibility with the healthcare environment. Our goal is to seamlessly integrate the highest quality professionals into your facility, helping you maintain a high standard of care.
+                    We ensure that our employees meet employment standards and licensing criteria. Our goal is to seamlessly integrate compatible, high quality professionals into your facility to help you maintain a high standard of care.
                 </p>
             </div>
         </div>
-        <div class="p-5 bg-try rounded shadow text-center mx-auto">
+        <div class="p-5 bg-try rounded shadow text-center mx-auto w-75">
             <h2 class="text-light text-uppercase">Try before you buy</h2>
-            <p class="text-light fs-5">Our client satisfaction with our staff is of the utmost importance. Facilities can screen staff to ensure compatibility, and in instances where they aren't the right fit can request replacements without concerns surrounding labour relations, arbitration, or wrongful dismissal.</p>
+            <p class="text-light fs-5">Your satisfaction with our staff is our highest priority. Facilities can screen staff to ensure compatibility, and if they aren't the right fit, can request replacements without concerns around labour relations, arbitration, or wrongful dismissal.</p>
         </div>
         <div class="row g-5 py-5 row-cols-1 row-cols-lg-3">
             <div class="col-md-4 text-center feature">
-                <i class="fas fa-award fa-3x"></i>
+                <i class="fas fa-award fa-3x p-2"></i>
                 <h2>Quality Standards</h2>
                 <hr>
-                <p>All of our staff meet provincial licensing criteria, and go through criminal records checks, immunization and TB screening, current First Aid/CPR, and hold practicing registration with applicable provincial professional bodies. We check a minimum of three references for each short-listed applicant.</p>
+                <p>Our staff meet provincial licensing and registration criteria, including a criminal records check, immunization and TB screening, and current First Aid/CPR certification. We check a minimum of three references for each short-listed applicant.</p>
             </div>
             <div class="col-md-4 text-center feature">
-                <i class="fas fa-globe fa-3x"></i>
+                <i class="fas fa-globe fa-3x p-2"></i>
                 <h2>Diversity</h2>
                 <hr>
-                <p>We work with highly motivated, extremely adaptable, and intelligent professionals from a variety of backgrounds and designations. Our staff has experience in acute hospitals, multi-level care facilities, extended care units, psychiatric programs and residential settings. As diverse as the population they serve, they meet most language requirements for care. </p>
+                <p>Our professionals are highly motivated, adaptable and intelligent. They have experience in acute hospitals, multi-level care facilities, extended care units, psychiatric programs and residential settings. They’re as diverse as the populations you serve and meet most language requirements for care. </p>
             </div>
             <div class="col-md-4 text-center feature">
-                <i class="fas fa-user-nurse fa-3x"></i>
+                <i class="fas fa-user-nurse fa-3x p-2"></i>
                 <h2>Nursing Supervision</h2>
                 <hr>
-                <p>Our nursing directors offer individualized, two-level supervisory service. The staff level prepares workers for each job via orientation and location-specific details. The managerial level provides an open line of communication to provide the most comprehensive response and assistance with any potential issues.</p>
+                <p>Our nursing directors offer individualized supervisory service at two levels. Our supervisors orient staff with location-specific details for seamless integration. They also offer open communication with managers to provide smooth, comprehensive service.</p>
             </div>
         </div>
         <div class="staff-list shadow-sm w-75 mx-auto">
@@ -127,29 +160,39 @@
         </div>
     </main>
     <div class="spacer"></div>
-    <div class="bg-light py-5">
+    <div class="bg-light py-4">
         <div class="container text-center">
-            <h2>Learn more</h2>
-            <div class="card-group w-75 mx-auto">
-                <div class="card m-2">
-                    <div class="card-body">
-                    <h5 class="card-title">Our Services</h5>
-                    <p class="card-text">Short and long-term staff placements for healthcare facilities</p>
-                    <a href="services-main.html" class="btn btn-primary">More Info</a>
+            <h3 class="text-secondary pb-4">Learn more</h3>
+            <div class="card-group w-100 mx-auto">
+                <div class="card card-btm">
+                    <div class="card-header">Newsletter</div>
+                    <div class="card-body d-flex flex-column">
+                    <p class="card-text mb-0">The latest healthcare content delivered directly to your inbox</p>
+                    <form>
+                        <input class="form-control my-3" type="search" placeholder="Enter your email" aria-label="Search">
+                        <button class="btn btn-secondary my-2 my-sm-0 mt-auto" type="submit">Subscribe</button>
+                    </form>
                     </div>
                 </div>
-                <div class="card m-2">
-                    <div class="card-body">
-                    <h5 class="card-title">Service Area</h5>
-                    <p class="card-text">Services for private and public institutions and centers in major BC health regions</p>
-                    <a href="services-area.html" class="btn btn-primary">Area Map</a>
+                <div class="card card-btm">
+                    <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-secondary">Our Services</h5>
+                    <p class="card-text mt-auto">Short and long-term staff placements for healthcare facilities</p>
+                    <a href="services-staff.html" class="btn btn-secondary mt-auto">More Info</a>
                     </div>
                 </div>
-                <div class="card m-2">
-                    <div class="card-body">
-                    <h5 class="card-title">Contact Us</h5>
-                    <p class="card-text">For general inquiries, requests and questions please fill out our contact form</p>
-                    <a href="contact-main.html" class="btn btn-primary">Contact Us</a>
+                <div class="card card-btm">
+                    <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-secondary">Where We Work</h5>
+                    <p class="card-text mt-auto">Private and public institutions in major BC health regions</p>
+                    <a href="services-area.html" class="btn btn-secondary mt-auto">Area Map</a>
+                    </div>
+                </div>
+                <div class="card card-btm">
+                    <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-secondary">Questions?</h5>
+                    <p class="card-text mt-auto">Email or call today</p>
+                    <a href="contact-main.html" class="btn btn-secondary mt-auto">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -157,21 +200,40 @@
     </div>
     <div class="footer-spacer"></div>
     <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-            </a>
-            <span class="text-muted">&copy; 2021 Health Staffing</span>
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-5">
+              <h5>Health Staffing</h5>
+              <p class="mb-2 text-muted">#205-810 Quayside Drive</p>
+              <p class="mb-2 text-muted">New Westminster, BC</p>
+              <p class="mb-2 text-muted">V3M 6B9</p>
+              <br>
+              <p class="mb-2 text-muted"><strong>Tel:</strong> 604 520 7775</p>
+              <p class="mb-2 text-muted"><strong>Email:</strong> info@healthstaffing.ca</p>
             </div>
-        
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-muted" href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
-            <li class="ms-3"><a class="text-muted" href="#"><i class="fab fa-facebook fa-2x"></i></a></li>
-            <li class="ms-3"><a class="text-muted" href="#"><i class="fab fa-linkedin fa-2x"></i></a></li>
+            <div class="col-5">
+              <h5>Quick Links</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="services-main.html" class="nav-link p-0 text-muted">Our Services</a></li>
+                <li class="nav-item mb-2"><a href="employment-benefits.html" class="nav-link p-0 text-muted">Employment</a></li>
+                <li class="nav-item mb-2"><a href="contact-main.html" class="nav-link p-0 text-muted">Contact</a></li>
+                <li class="nav-item mb-2"><a href="contact-about.html" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+            <div class="col-2 d-flex align-items-center justify-content-center">
+                <img class="img-footer" src="images/logo-footer.png">
+              </div>
+          <div class="d-flex justify-content-between py-4 my-4 border-top">
+            <p style="font-size: 12px;">&copy; 2022 Health Staffing. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
             </ul>
+          </div>
         </footer>
-    </div>
+      </div>
     <script src="assets/bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -4,38 +4,90 @@ body {
 
 /* NAV STYLES */
 
+#nav-logo {
+    max-width: 400px;
+}
+
+.top-container {
+    padding: 20px 0;
+}
+
+.logo {
+    display: block;
+    width: 450px;
+    height: 100px;
+    background: url("../images/healthstaffing_logo_full_color_rgb.svg");
+    background-size: 450px 100px;
+}
+
 .dropdown-item.active, .dropdown-item:active {
     background-color: #488d9c;
 }
 
-.navbar .container-fluid {
-    max-width: 1300px;
-    padding: 20px 0;
+.nav-top {
+    padding: 5px 0;
+    background-color: #56919b;
 }
 
-.nav-link, .nav-item {
-    padding: 0 10px;
+.navbar .container-fluid {
+    max-width: 1300px;
+}
+
+.nav-sec {
+    background-color: #56919b;
+}
+
+.nav-link {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.nav-link .active {
+    color: red;
+}
+
+.navbar {
+    padding: 5px 0;
+}
+
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-item {
+    padding-right: 10px;
+}
+
+.mail-label {
+    font-size: 14px;
+}
+
+.form-control {
+    font-size: 14px;
 }
 
 /* CUSTOM COLORS */
 
 .btn-primary {
-    background-color: #78b5c1;
-    border-color: #78b5c1;
+    background-color: #488d9c;
+    border-color: #488d9c;
+    font-size: 16px;
 }
 
 .btn-primary:hover {
-    background-color: #488d9c;
-    border-color: #488d9c;
+    background-color: #78b5c1;
+    border-color: #78b5c1;
   }
   .btn-check:focus + .btn-primary, .btn-primary:focus {
-    background-color: #488d9c;
-    border-color: #488d9c;
+    background-color: #78b5c1;
+    border-color: #78b5c1;
     box-shadow: 0 0 0 0.25rem rgba(46, 119, 136, 0.5);
   }
   .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
-    background-color: #488d9c;
-    border-color: #488d9c;
+    background-color: #78b5c1;
+    border-color: #78b5c1;
   }
   .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.25rem rgba(46, 119, 136, 0.5);
@@ -44,6 +96,23 @@ body {
     background-color: #78b5c1;
     border-color: #78b5c1;
   }
+  
+.btn-secondary {
+    background-color: #91b070;
+    border-color: #91b070;
+    font-size: 16px;
+}
+
+.btn-secondary:hover {
+    background-color: #849e74;
+    border-color: #849e74;
+}
+
+  .btn-check:focus + .btn-secondary, .btn-secondary:focus {
+    background-color: #849e74;
+    border-color: #849e74;
+    box-shadow: 0 0 0 0.25rem rgba(46, 119, 136, 0.5);
+}
 
   a {
     color: #198754;
@@ -64,43 +133,65 @@ body {
 
 /* HOME PAGE */
 
-.main-card a {
-    text-decoration: none;
-    color: #000;
+.banner {
+    height: 600px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 50%, rgb(255, 255, 255)), url("../../images/vancouver-g860867e9c_1920.jpg");
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
 }
 
-.main-card:hover {
-    background-color: #b1c79b;
+.banner h1 {
+    font-size: 28px;
+    font-weight: bold;
 }
 
-.main-card:hover .home-icon {
-    background-color: #b1c79b;
-    color: #fff;
+.banner h2 {
+    padding: 15px 0;
+    font-size: 16px;
 }
 
-.main-card:hover h4 {
-    color: #fff;
-}
-
-.main-card:hover p {
-    color: #fff;
+.sub-banner {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 400px;
+    height: 60%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
 }
 
 .home-icon {
-    font-size: 4em;
-    color: #b1c79b;
+    font-size: 3em;
+    color: #91b070;
 }
 
 #testimonial-carousel {
     background-image: radial-gradient(white, #f0f0f0);
 }
 
+.divider {
+    height: 10px;
+    background-color: #91b070;
+}
+
 .fp-feature {
-    background-color: #586172;
+    background-color: #fff;
+}
+
+.col-text {
+    padding: 0 70px;
 }
 
 .fp-feature h2 {
     margin-bottom: 30px;
+}
+
+.fp-img-sec {
+    margin-left: -12px;
 }
 
 /* SUB PAGES */
@@ -110,7 +201,6 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
 }
-
 
 /* FOOTER */
 
@@ -122,10 +212,14 @@ body {
     box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
 }
 
+.img-footer {
+    height: 100px;
+}
+
 /* SERVICES */
 
 .bg-serv-main {
-    background-image: url("../../images/services-main-2.png");
+    background-image: url("../../images/services-main.png");
 }
 
 .bg-serv-staff {
@@ -136,14 +230,47 @@ body {
     background-image: url("../../images/services-area.png");
 }
 
+
+.bg-call {
+    background-color: #78b5c1;
+}
+
+.call-icon {
+    color: #78b5c1;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 100%;
+    border: 5px solid #78b5c1;
+    z-index: 10;
+}
+
+.call-text {
+    color: #78b5c1;
+    font-weight: 600;
+    background-color: #fff;
+    padding: 15px 15px 15px 40px;
+    margin-left: -25px;
+    border-radius: 5px;
+}
+
 /* EMPLOYMENT */
 
 .bg-empl-ben {
     background-image: url("../../images/employment-benefits.png");
 }
 
-.bg-apply {
-    background-image: radial-gradient(#D86E63 50%, #FFA59C);
+.bg-empl-trav {
+    background-image: url("../../images/employment-trav.png");
+}
+
+.card-apply {
+    width: 40rem;
+    background-color: #D86E63;
+}
+
+.apply-img {
+    height: 250px;
+    padding: 30px;
 }
 
 .bg-empl-app {
@@ -164,10 +291,6 @@ body {
     background-image: url("../../images/contact-main.png");
 }
 
-.bg-call {
-    background-color: #78b5c1;
-}
-
 .bg-try {
     background-image: linear-gradient(to bottom right, #7d9575, #b1c79b);
 }
@@ -177,10 +300,27 @@ body {
 }
 
 .spacer {
-    height: 30px;
+    height: 50px;
 }
 
 .list-group-item {
     width: 50%;
     text-align: center;
 }
+
+/* MAILCHIMP */
+
+#mce-responses {
+    position: fixed;
+    bottom: 1120px;
+    font-size: 14px;
+}
+
+#mce-error-response {
+    color: salmon;
+}
+
+#mce-success-response {
+    color: green;
+}
+

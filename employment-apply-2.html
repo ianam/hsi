@@ -11,50 +11,83 @@
     <link href="assets/bootstrap-5.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/fa-styles.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
     <title>Health Staffing | Apply Now</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/images/healthstaffing_logo.png" alt="Health Staffing Logo" width="500">
+    <header class="sticky-top bg-white">
+        <div class="nav-top">
+            <ul class="nav container justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-white" href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="ms-3"><a class="text-white" href="#"><i class="fab fa-facebook"></i></a></li>
+                <li class="ms-3"><a class="text-white" href="#"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+        </div>
+        <nav class="navbar nav-first navbar-expand-lg navbar-light container">
+            <div class="container-fluid top-container">
+                <a class="navbar-brand logo" href="index.html">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="navbar-nav ms-auto mx-5">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Services</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="services-main.html">Our Services</a></li>
-                                <li><a class="dropdown-item" href="services-staff.html">Staff Types</a></li>
-                                <li><a class="dropdown-item" href="services-area.html">Service Area</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Employment</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="employment-benefits.html">Benefits</a></li>
-                                <li><a class="dropdown-item" href="employment-apply.html">Apply Now</a></li>
-                                <li><a class="dropdown-item" href="employment-resources.html">Staff Resources</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Contact</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="contact-main.html">Contact Us</a></li>
-                                <li><a class="dropdown-item" href="contact-about.html">About Us</a></li>
-                            </ul>
-                        </li>
-                    </div>
-                </div>
+                <!-- Begin Mailchimp Signup Form -->
+                <form action="https://healthstaffing.us14.list-manage.com/subscribe/post?u=9f9ca06b938ff266c5372e49f&amp;id=cd52c343e8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                    <div class="mc-field-group">
+                        <label for="mce-EMAIL" class="my-1 mr-2 mail-label">Join our mailing list
+                        </label>
+                        <div class="input-group">
+                          <input type="email" value="" name="EMAIL" class="required email form-control mr-sm-2" id="mce-EMAIL" placeholder="Enter your email">  
+                            <div id="mce-responses" class="clear foot">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9f9ca06b938ff266c5372e49f_cd52c343e8" tabindex="-1" value=""></div>
+                                <div class="optionalParent">
+                                    <div class="clear foot">
+                                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-outline-success my-2 my-sm-0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </form>
+                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                <!--End mc_embed_signup-->
             </div>
         </nav>
+        <div class="nav-sec">
+            <nav class="navbar navbar-expand-lg navbar-light container">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="navbar-nav">
+                            <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Services</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="services-main.html">Our Services</a></li>
+                                    <li><a class="dropdown-item" href="services-staff.html">Our Staff</a></li>
+                                    <li><a class="dropdown-item" href="services-area.html">Service Area</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active text-white dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Employment</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="employment-benefits.html">Benefits</a></li>
+                                    <li><a class="dropdown-item" href="employment-travel-nursing.html">Travel Nursing</a></li>
+                                    <li><a class="dropdown-item" href="employment-apply.html">Apply Now</a></li>
+                                    <li><a class="dropdown-item" href="employment-resources.html">Staff Resources</a></li>
+                                </ul>
+                            </li>
+                            <a class="nav-link text-white " aria-current="page" href="contact-main.html">Contact</a>
+                            <a class="nav-link text-white" aria-current="page" href="contact-about.html">About</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
     <main role="main" class="container">
         <div class="spacer"></div>
@@ -66,8 +99,8 @@
                 </p>
             </div>
         </div>
-        <h2>General Application</h2>
-        <p>Please fill out the application form below, and attach your current resume, to submit it for review. Applicants will be contacted within two weeks of applying for further processing. Please note that due to the volume of applications we receive, we are unable to respond to each one individually.</p>
+        <h2>Employment Application</h2>
+        <p>Please fill out the application form below, and attach your current resume, to submit it for review. Applicants will be contacted within <strong>two weeks</strong> of applying for further processing. Please note that due to the volume of applications we receive, we are unable to respond to each one individually.</p>
         <div class="p-5 bg-light">
             <form class="row g-3" method="post" action="email-application.php" enctype="multipart/form-data">
                 <h3>Personal Information</h3>
@@ -208,21 +241,40 @@
     </main>
     <div class="footer-spacer"></div>
     <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-            </a>
-            <span class="text-muted">&copy; 2021 Health Staffing</span>
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-5">
+              <h5>Health Staffing</h5>
+              <p class="mb-2 text-muted">#205-810 Quayside Drive</p>
+              <p class="mb-2 text-muted">New Westminster, BC</p>
+              <p class="mb-2 text-muted">V3M 6B9</p>
+              <br>
+              <p class="mb-2 text-muted"><strong>Tel:</strong> 604 520 7775</p>
+              <p class="mb-2 text-muted"><strong>Email:</strong> info@healthstaffing.ca</p>
             </div>
-        
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-muted" href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
-            <li class="ms-3"><a class="text-muted" href="#"><i class="fab fa-facebook fa-2x"></i></a></li>
-            <li class="ms-3"><a class="text-muted" href="#"><i class="fab fa-linkedin fa-2x"></i></a></li>
+            <div class="col-5">
+              <h5>Quick Links</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="services-main.html" class="nav-link p-0 text-muted">Our Services</a></li>
+                <li class="nav-item mb-2"><a href="employment-benefits.html" class="nav-link p-0 text-muted">Employment</a></li>
+                <li class="nav-item mb-2"><a href="contact-main.html" class="nav-link p-0 text-muted">Contact</a></li>
+                <li class="nav-item mb-2"><a href="contact-about.html" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+            <div class="col-2 d-flex align-items-center justify-content-center">
+                <img class="img-footer" src="images/logo-footer.png">
+              </div>
+          <div class="d-flex justify-content-between py-4 my-4 border-top">
+            <p style="font-size: 12px;">&copy; 2022 Health Staffing. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
             </ul>
+          </div>
         </footer>
-        </div>
+      </div>
         <script src="assets/bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
